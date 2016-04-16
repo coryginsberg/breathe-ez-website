@@ -1,0 +1,552 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,500,500italic);
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browser-upgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.blue-background {
+    background-color: #1976d2;
+}
+
+.blue-text {
+    color: #1976D2;
+}
+
+.green-background {
+    background-color: #7AC943;
+}
+
+.green-text {
+    color: #7AC943;
+}
+
+.black-text {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.white-text {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+li {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+a {
+    color: rgba(0, 0, 0, 0.87);
+    text-decoration: underline;
+}
+
+h2,
+h3,
+h4,
+.headline,
+.subhead,
+.body1,
+.caption {
+    font-weight: 400;
+}
+
+.title,
+.body2,
+.button {
+    font-weight: 500;
+}
+
+.body1,
+.body2,
+.button {
+    font-size: 14em;
+}
+
+.caption,
+h1,
+h2,
+h3,
+h4 {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.headline,
+.title,
+.subhead,
+.body2,
+.body1,
+.menu,
+.button {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 56px;
+}
+
+h3 {
+    font-size: 45px;
+    letter-spacing: 0;
+}
+
+h4 {
+    font-size: 34px;
+    letter-spacing: 0;
+}
+
+h5 {
+    font-size: 18px;
+    letter-spacing: 0;
+}
+
+.headline {
+    font-size: 24px;
+    letter-spacing: 0;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.subhead {
+    font-size: 15px;
+}
+
+.caption {
+    font-size: 14px;
+}
+
+.button {
+    text-transform: uppercase;
+}
+
+#css-menu {
+    position: relative;
+    background: #7AC943;
+    width: auto;
+}
+
+#css-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: block;
+    zoom: 1;
+}
+
+#css-menu ul:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#css-menu ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#css-menu.align-right ul li {
+    float: right;
+}
+
+#css-menu.align-center ul {
+    text-align: center;
+}
+
+#css-menu ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 15px 25px;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: relative;
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+#css-menu ul li a:hover {
+    color: #787878;
+}
+
+#css-menu ul li a:hover:before {
+    width: 100%;
+}
+
+#css-menu ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #1976d2;
+    -webkit-transition: width .25s;
+    -moz-transition: width .25s;
+    -o-transition: width .25s;
+    transition: width .25s;
+}
+
+#css-menu ul li.last > a:after,
+#css-menu ul li:last-child > a:after {
+    display: none;
+}
+
+#css-menu ul li.active a {
+    color: #ffffff;
+}
+
+#css-menu ul li.active a:before {
+    width: 100%;
+}
+
+#css-menu.align-right li.last > a:after,
+#css-menu.align-right li:last-child > a:after {
+    display: block;
+}
+
+#css-menu.align-right li:first-child a:after {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.shadow-z-1 {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12), 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+}
+
+.shadow-z-1-hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.shadow-z-2 {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow-z-3 {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow-z-4 {
+    box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+.shadow-z-5 {
+    box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.btn-circle.btn-lg {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#service-button {
+    float: right;
+    margin-right: 4.5%;
+}
+
+#service-button > img {
+    margin-top: 18%;
+    width: 100%;
+}
+
+.breadcrumb {
+    margin-top: 16px;
+    margin-bottom: -8px;
+    background-color: rgba(0, 0, 0, 0.00);
+}
+
+.social {
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 36px;
+    height: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.carousel {
+    margin-bottom: 16px;
+}
+
+.carousel .container {
+    position: relative;
+    z-index: 9;
+}
+
+.carousel-control {
+    margin-top: 0;
+    font-size: 120px;
+    text-shadow: 0 0 50px rgba(0, 0, 0, .75);
+}
+
+.carousel-control {
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+}
+
+.carousel .item {
+    height: 350px;
+}
+
+.carousel img {
+    position: absolute;
+    bottom: 0;
+    right: -38%;
+    min-width: 175%;
+}
+
+.carousel-caption {
+    background-color: transparent;
+    position: static;
+    max-width: 550px;
+    text-align: left;
+    padding: 6% 20px 0;
+}
+
+.carousel-caption h1,
+.carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 0 45px rgba(0, 0, 0, 1);
+}
+
+.carousel-caption .btn {
+    margin-top: 10px;
+}
+
+.rounded-rectangle {
+    border-radius: 3px 3px 3px 3px;
+    overflow: hidden;
+}
+
+.full-img {
+    position: relative;
+    width: 120%;
+}
+
+.round-btn {
+    margin-top: -35px;
+    padding-bottom: 16px;
+}
+
+.a-list li {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.thumbnail-p {
+    padding-top: 4pt;
+    margin-bottom: 0;
+}
+
+.info-paragraph {
+    padding: 16px 0;
+    line-height: 125%;
+}
+
+.map {
+    float: right;
+    margin: 0 16px 16px;
+}
+
+.nadca-logo {
+    margin: 16px;
+    width: 100px;
+}
+
+.carrier-logo {
+    margin: 35px 16px 16px;
+    width: 275px;
+    float: right;
+}
+
+.not-active {
+    pointer-events: none;
+    cursor: default;
+}
+
+.center-number {
+    color: #000;
+    text-decoration: none;
+    align-content: center;
+    font-size: 34px;
+}
+
+#change {
+    width: 80%;
+    height: 80%;
+    border: 1px solid black;
+    overflow: hidden;
+    font-size: 1em;
+}
+
+/* Quick hack in order for the whole email address to show up on all screen sizes */
+@media screen and (min-width: 1080px) {
+    .email {
+        font-size: 28px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .subhead {
+        font-size: 16px;
+    }
+
+    .body1 .body2 {
+        font-size: 14px;
+    }
+
+    .btn-circle.btn-lg {
+        position: fixed !important;
+        bottom: 4%;
+        right: 0;
+        z-index: 999;
+    }
+
+    #css-menu ul li {
+        float: none;
+        display: block;
+        z-index: -1;
+    }
+
+    #css-menu {
+        width: 100%;
+    }
+
+    #css-menu ul li a {
+        width: 90%;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border-bottom: 1px solid #1976D2;
+    }
+
+    #css-menu ul li.last > a,
+    #css-menu ul li:last-child > a {
+        border: 0;
+    }
+
+    #css-menu ul li a:after {
+        display: none;
+    }
+
+    #css-menu ul li a:before {
+        display: none;
+    }
+
+    #side-panel {
+        display: none;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+    #top-panel {
+        display: none;
+    }
+
+    #bottom-panel {
+        display: none;
+    }
+
+    .main_content {
+        background-size: 100%;
+        background: no-repeat top;
+    }
+}
+
+.side-bar {
+    padding-top: 7%;
+    color: #000;
+}
+
+.side-bar * {
+    color: #000;
+}
+
+/*Used to prevent scrolling in Google Maps iFrame on 'About' page*/
+.overlay {
+    background: transparent;
+    position: relative;
+    width: 350px;
+    height: 250px; /* your iframe height */
+    top: 250px; /* your iframe height */
+    margin-top: -250px; /* your iframe height */
+}
+
+footer > hr {
+    border-color:rgba(255,255,255,0.87);
+    margin-left:-1em;
+    margin-right:-1em
+}
