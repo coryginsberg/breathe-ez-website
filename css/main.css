@@ -53,19 +53,19 @@ html {
 }
 
 .black-text {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 1.0);
 }
 
 .white-text {
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 1.0);
 }
 
 li {
-    color: rgba(255, 255, 255, 0.87);
+    color: rgba(255, 255, 255, 1.0);
 }
 
 a {
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(0, 0, 0, 1.0);
     text-decoration: underline;
 }
 
@@ -96,7 +96,7 @@ h1,
 h2,
 h3,
 h4 {
-    color: rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .headline,
@@ -106,12 +106,12 @@ h4 {
 .body1,
 .menu,
 .button {
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 h1 {
     font-size: 100px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h2 {
@@ -129,7 +129,7 @@ h4 {
 }
 
 h5 {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 0;
 }
 
@@ -139,15 +139,15 @@ h5 {
 }
 
 .title {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .subhead {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .caption {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .button {
@@ -545,8 +545,12 @@ a {
     margin-top: -250px; /* your iframe height */
 }
 
-footer > hr {
-    border-color:rgba(255,255,255,0.87);
-    margin-left:-1em;
-    margin-right:-1em
+.emphasis-on-hover {
+    -webkit-transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+}
+
+.emphasis-on-hover:hover {
+    -webkit-transform: rotate(360deg) scale(1.5, 1.5);
+    transform: rotate(360deg) scale(1.5, 1.5);
 }
