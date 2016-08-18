@@ -281,12 +281,6 @@ h5 {
     box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
-}
-
 .btn-circle.btn-lg {
     width: 70px;
     height: 70px;
@@ -324,57 +318,6 @@ h5 {
 
 a {
     text-decoration: none;
-}
-
-.carousel {
-    margin-bottom: 16px;
-}
-
-.carousel .container {
-    position: relative;
-    z-index: 9;
-}
-
-.carousel-control {
-    margin-top: 0;
-    font-size: 120px;
-    text-shadow: 0 0 50px rgba(0, 0, 0, .75);
-}
-
-.carousel-control {
-    border-radius: 3px 3px 3px 3px;
-    overflow: hidden;
-}
-
-.carousel .item {
-    height: 350px;
-}
-
-.carousel img {
-    position: absolute;
-    bottom: 0;
-    right: -38%;
-    min-width: 175%;
-}
-
-.carousel-caption {
-    background-color: transparent;
-    position: static;
-    max-width: 550px;
-    text-align: left;
-    padding: 6% 20px 0;
-}
-
-.carousel-caption h1,
-.carousel-caption .lead {
-    margin: 0;
-    line-height: 1.25;
-    color: #fff;
-    text-shadow: 0 0 45px rgba(0, 0, 0, 1);
-}
-
-.carousel-caption .btn {
-    margin-top: 10px;
 }
 
 .rounded-rectangle {
@@ -521,6 +464,7 @@ a {
     }
 
     .main_content {
+        margin-top: 2%;
         background-size: 100%;
         background: no-repeat top;
     }
@@ -553,4 +497,251 @@ a {
 .emphasis-on-hover:hover {
     -webkit-transform: rotate(360deg) scale(1.5, 1.5);
     transform: rotate(360deg) scale(1.5, 1.5);
+}
+
+.request-service-btn {
+    position: absolute;
+    margin: auto;
+    width: 350px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    right: 0px;
+    padding: 0px;
+    size: 5em;
+}
+
+.request-service-btn-txt {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
+  margin-top: -2px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn, .btn-large,
+.btn-flat {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn.disabled, .disabled.btn-large,
+.btn-floating.disabled,
+.btn-large.disabled,
+.btn:disabled,
+.btn-large:disabled,
+.btn-large:disabled,
+.btn-floating:disabled,
+.btn[disabled],
+[disabled].btn-large,
+.btn-large[disabled],
+.btn-floating[disabled] {
+  background-color: #DFDFDF !important;
+  box-shadow: none;
+  color: #9F9F9F !important;
+  cursor: default;
+}
+
+.btn.disabled *, .disabled.btn-large *,
+.btn-floating.disabled *,
+.btn-large.disabled *,
+.btn:disabled *, .btn-large:disabled *,
+.btn-large:disabled *,
+.btn-floating:disabled *,
+.btn[disabled] *, [disabled].btn-large *,
+.btn-large[disabled] *,
+.btn-floating[disabled] * {
+  pointer-events: none;
+}
+
+.btn.disabled:hover, .disabled.btn-large:hover,
+.btn-floating.disabled:hover,
+.btn-large.disabled:hover,
+.btn:disabled:hover,
+.btn-large:disabled:hover,
+.btn-large:disabled:hover,
+.btn-floating:disabled:hover,
+.btn[disabled]:hover,
+[disabled].btn-large:hover,
+.btn-large[disabled]:hover,
+.btn-floating[disabled]:hover {
+  background-color: #DFDFDF !important;
+  color: #9F9F9F !important;
+}
+
+.btn i, .btn-large i,
+.btn-floating i,
+.btn-large i,
+.btn-flat i {
+  font-size: 5rem;
+  line-height: inherit;
+}
+
+.btn, .btn-large {
+  text-decoration: none;
+  color: #fff;
+  background-color: #2196f3;
+  text-align: center;
+  letter-spacing: .5px;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+.btn:hover, .btn-large:hover {
+  background-color: #42a5f5;
+}
+
+button.btn-floating {
+  border: none;
+}
+
+.btn-large {
+  height: 54px;
+  line-height: 54px;
+  font-size: 2.5rem;
+}
+
+.btn-large i {
+  font-size: 1.6rem;
+}
+
+/*!
+ * Waves v0.6.0
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
+ * https://github.com/fians/Waves/blob/master/LICENSE
+ */
+.waves-effect {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  transition: all .3s ease-out;
+}
+
+.waves-effect .waves-ripple {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  transition: all 0.7s ease-out;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  pointer-events: none;
+}
+
+.waves-effect.waves-light .waves-ripple {
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.waves-effect.waves-red .waves-ripple {
+  background-color: rgba(244, 67, 54, 0.7);
+}
+
+.waves-effect.waves-yellow .waves-ripple {
+  background-color: rgba(255, 235, 59, 0.7);
+}
+
+.waves-effect.waves-orange .waves-ripple {
+  background-color: rgba(255, 152, 0, 0.7);
+}
+
+.waves-effect.waves-purple .waves-ripple {
+  background-color: rgba(156, 39, 176, 0.7);
+}
+
+.waves-effect.waves-green .waves-ripple {
+  background-color: rgba(76, 175, 80, 0.7);
+}
+
+.waves-effect.waves-teal .waves-ripple {
+  background-color: rgba(0, 150, 136, 0.7);
+}
+
+.waves-effect input[type="button"], .waves-effect input[type="reset"], .waves-effect input[type="submit"] {
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+}
+
+.waves-effect img {
+  position: relative;
+  z-index: -1;
+}
+
+.waves-notransition {
+  transition: none !important;
+}
+
+.waves-circle {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+}
+
+.waves-input-wrapper {
+  border-radius: 0.2em;
+  vertical-align: bottom;
+}
+
+.waves-input-wrapper .waves-button-input {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.waves-circle {
+  text-align: center;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 50%;
+  -webkit-mask-image: none;
+}
+
+.waves-block {
+  display: block;
+}
+
+/* Firefox Bug: link not triggered */
+.waves-effect .waves-ripple {
+  z-index: -1;
 }
