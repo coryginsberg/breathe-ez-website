@@ -470,6 +470,17 @@ a {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .request-service-btn {
+        margin-top: 135px !important;
+        width: 85% !important;
+
+    }
+    #css-menu {
+        margin-top: 75px;
+    }
+}
+
 .side-bar {
     padding-top: 7%;
     color: #000;
@@ -484,35 +495,24 @@ a {
     background: transparent;
     position: relative;
     width: 350px;
-    height: 250px; /* your iframe height */
-    top: 250px; /* your iframe height */
-    margin-top: -250px; /* your iframe height */
-}
-
-.emphasis-on-hover {
-    -webkit-transition: -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out;
-}
-
-.emphasis-on-hover:hover {
-    -webkit-transform: rotate(360deg) scale(1.5, 1.5);
-    transform: rotate(360deg) scale(1.5, 1.5);
+    height: 250px;
+    top: 250px;
+    margin-top: -250px;
 }
 
 .request-service-btn {
-    position: absolute;
+    position: absolute !important;
     margin: auto;
-    width: 350px;
+    width: 300px;
     margin-top: 50px;
-    margin-bottom: 50px;
-    right: 0px;
+    right: 8%;
     padding: 0px;
-    size: 5em;
 }
 
 .request-service-btn-txt {
     display: flex;
     justify-content: center;
+    color: #fff;
 }
 
 nav ul a.btn, nav ul a.btn-large, nav ul a.btn-large, nav ul a.btn-flat, nav ul a.btn-floating {
@@ -744,4 +744,40 @@ button.btn-floating {
 /* Firefox Bug: link not triggered */
 .waves-effect .waves-ripple {
   z-index: -1;
+}
+
+
+/* Fixes email address getting cut off on smaller screens. */
+.dont-break-out {
+
+  /* These are technically the same, but use both */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+}
+
+
+@media only screen and (min-width: 700px) {
+    /*  Below is used to adjust the width of the bootstrap columns.
+        This is being done because the email address in a .col-sm-3
+        gets cut off on the last letter. By adjusting col-sm-3 to increase its size by 1% 
+        and col-sm-9 to decrease its size by 1% (thus keeping it at 100% total), the problem is fixed.
+        .col-sm-5 is in here as scrolling down showed that the columns were not parallel. */
+    .col-sm-9 {
+        width: 74%;
+    }
+
+    .col-sm-5 {
+        width: 41%;
+    }
+
+    .col-sm-3 {
+        width: 26%;
+    }
 }

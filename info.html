@@ -63,8 +63,8 @@
 			<a class="navbar-brand" href="index.html">
 				<img src="img/logo/full-logo.png" style="height:9rem;"/>
 			</a>
-			<div class="request-service-btn">
-				<a href="request-service.html" class="waves-effect waves-light btn-large request-service-btn-txt">Request Service</a>
+			<div class="waves-effect waves-light btn-large request-service-btn">
+				<a href="request-service.html" class="request-service-btn-txt">Request Service</a>
 			</div>
 		</div>
 		<div id="css-menu">
@@ -126,51 +126,6 @@
 										allowfullscreen>
 								</iframe>
 							</div>
-							<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-							<script>
-								// By Chris Coyier & tweaked by Mathias Bynens
-								$(function () {
-
-									// Find all YouTube videos
-									var $allVideos = $("iframe[src^='//www.youtube.com']"),
-
-									// The element that is fluid width
-											$fluidEl = $("#what-is");
-
-									// Figure out and save aspect ratio for each video
-									$allVideos.each(function () {
-
-										$(this)
-												.data('aspectRatio', this.height / this.width)
-
-												// and remove the hard coded width/height
-												.removeAttr('height')
-												.removeAttr('width');
-
-									});
-
-									// When the window is resized
-									// (You'll probably want to debounce this)
-									$(window).resize(function () {
-
-										var newWidth = $fluidEl.width() - 50;
-
-										// Resize all videos according to their own aspect ratio
-										$allVideos.each(function () {
-
-											var $el = $(this);
-											$el
-													.width(newWidth)
-													.height(newWidth * $el.data('aspectRatio'));
-
-										});
-
-										// Kick off one resize to fix all videos on page load
-									}).resize();
-
-								});
-
-							</script>
 						</div>
 						<hr>
 						<div id="should-i-get-ducts-clean">
@@ -222,8 +177,11 @@
 						</div>
 					</div>
 					<div class=col-sm-3 id="side-panel">
-						<h3 class=center><a href=tel:847-729-4328 class=center-number style="color:#000;">(847) 729 - HEAT</a></h3>
-						<h5 class=center><a href="mailto:support@breatheezhome.com" style="color:#000; text-decoration:none">support@breatheezhome.com</a>
+						<h3 class=center>
+							<a href=tel:847-729-4328 class=center-number style="color:#000;">(847) 729 - HEAT</a>
+						</h3>
+						<h5 class=center>					
+							<a href="mailto:support@breatheezhome.com" style="color:#000; text-decoration:none" class="dont-break-out">support@breatheezhome.com</a>
 						</h5>
 						<hr>
 						<h3 style="color:#000;" class=center>Hours:</h3>

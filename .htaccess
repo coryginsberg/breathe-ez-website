@@ -1,0 +1,8 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^breatheezhome.com[nc]
+RewriteRule ^(.*)$ http://www.breatheezhome.com/$1 [r=301,nc]
+
+//Custom 404 errors
+ErrorDocument 404 /home/www/404.html
